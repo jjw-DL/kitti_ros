@@ -1,0 +1,10 @@
+import cv2 
+import os
+
+DATA_PATH = '/home/jjw/Kitti/2011_09_26/2011_09_26_drive_0005_sync/'
+ 
+img = img = cv2.imread(os.path.join(DATA_PATH,'image_02/data/%010d.png'%0))
+cv2.namedWindow("Image") 
+cv2.imshow("Image", img) 
+cv2.waitKey (0)
+cv2.destroyAllWindows()
